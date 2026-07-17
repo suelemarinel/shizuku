@@ -8,7 +8,7 @@ import Gallery from "@/components/Gallery";
 
 export default function Home() {
   const jsonLd = {
-    "@context": "https://schema.org",
+    "@context": "shizuku-restaurant.vercel.app",
     "@type": "Restaurant",
     name: "Shizuku",
     servesCuisine: "Japonaise — Omakase",

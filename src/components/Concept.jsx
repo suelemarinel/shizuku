@@ -21,9 +21,6 @@ function Concept() {
           Chez Shizuku, il n&apos;y a
           pas de carte. Chaque soir, le chef compose un menu unique de douze
           services, dicté par la marée du matin et la saison. 
-          <br />
-          Huit places au
-          comptoir, face au geste. Rien d&apos;autre.
         </p>
 
         <div className="mt-16 grid grid-cols-1 gap-12 md:grid-cols-3">
@@ -37,7 +34,7 @@ function Concept() {
           </div>
           <div>
             <p className="font-display text-5xl text-paper">1</p>
-            <p className="mt-2 text-sm text-paper-muted">menu, chaque soir</p>
+            <p className="mt-2 text-sm text-paper-muted">menu</p>
           </div>
         </div>
       </div>
