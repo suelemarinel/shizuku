@@ -15,7 +15,7 @@ const services = [
 
 function Menu() {
   return (
-    <section className="bg-ink py-32">
+    <section id="menu" className="bg-ink py-32">
       <div className="mx-auto max-w-2xl px-6">
         <div className="text-center">
           <p className="text-sm tracking-[0.3em] text-laque">LE MENU</p>

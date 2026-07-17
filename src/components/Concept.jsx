@@ -1,6 +1,6 @@
 function Concept() {
   return (
-    <section className="relative overflow-hidden bg-ink py-32">
+    <section id="concept" className="relative overflow-hidden bg-ink py-32">
       <span
         aria-hidden="true"
         className="pointer-events-none absolute -right-10 top-1/2 -translate-y-1/2 select-none font-display text-[28rem] leading-none text-paper/[0.1]"

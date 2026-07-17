@@ -1,6 +1,6 @@
 function Reservation() {
   return (
-    <section className="bg-ink py-32">
+    <section id="reservation" className="bg-ink py-32">
       <div className="mx-auto max-w-xl px-6 text-center">
         <p className="text-sm tracking-[0.3em] text-laque">RÉSERVER</p>
 
