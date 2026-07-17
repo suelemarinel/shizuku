@@ -19,7 +19,9 @@ function Hero() {
         </p>
         <div className="mt-8 h-[3px] w-12 bg-laque" />
         <p className="mt-8 max-w-md text-paper-muted leading-relaxed">
-          Douze services au comptoir. Une soirée, un chef, le geste juste.
+          Douze services au comptoir.
+        <br />
+          Une soirée, un chef, le geste juste.
         </p>
       </div>
     </section>
