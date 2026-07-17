@@ -15,7 +15,7 @@ const services = [
 
 function Menu() {
   return (
-    <section className="bg-ink-soft py-32">
+    <section className="bg-ink py-32">
       <div className="mx-auto max-w-2xl px-6">
         <div className="text-center">
           <p className="text-sm tracking-[0.3em] text-laque">LE MENU</p>
@@ -23,33 +23,42 @@ function Menu() {
             Douze services
           </h2>
           <p className="mt-6 text-paper-muted">
-            Le menu change chaque soir. Celui-ci n&apos;est qu&apos;un
-            souvenir — le vôtre reste à écrire.
+            Le menu change chaque soir. 
+            <br />
+            Celui-ci n&apos;est qu&apos;un souvenir, le vôtre reste à écrire.
           </p>
         </div>
 
-        <ol className="mt-20">
-          {services.map((service) => (
-            <li
-              key={service.num}
-              className="group flex items-baseline gap-6 border-b border-paper/10 py-6 first:border-t"
-            >
-              <span className="font-display text-lg text-laque">
-                {service.num}
-              </span>
-              <span className="font-display text-2xl text-paper">
-                {service.name}
-              </span>
-              <span className="ml-auto text-right text-sm text-paper-muted">
-                {service.detail}
-              </span>
-            </li>
-          ))}
-        </ol>
+        <div className="mt-20 rounded-lg border border-paper/10 bg-ink-raised px-8 py-12 md:px-14">
+          <p className="text-center font-display text-lg tracking-[0.2em] text-paper-muted">
+            雫
+          </p>
 
-        <p className="mt-12 text-center text-sm text-paper-muted">
-          Menu unique — 180 € par personne, accord saké en supplément.
-        </p>
+          <ol className="mt-10">
+            {services.map((service) => (
+              <li
+                key={service.num}
+                className="flex items-baseline gap-6 border-b border-paper/10 py-6 last:border-b-0"
+              >
+                <span className="font-display text-lg text-laque">
+                  {service.num}
+                </span>
+                <span className="font-display text-2xl text-paper">
+                  {service.name}
+                </span>
+                <span className="ml-auto text-right text-sm text-paper-muted">
+                  {service.detail}
+                </span>
+              </li>
+            ))}
+          </ol>
+
+          <p className="mt-10 text-center text-sm text-paper-muted">
+            Menu unique — 180 € par personne
+            <br />
+            accord saké en supplément
+          </p>
+        </div>
       </div>
     </section>
   );

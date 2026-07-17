@@ -16,7 +16,7 @@ function Reservation() {
 
         <a
           href="tel:+32473468044"
-          className="mt-12 inline-block bg-laque px-10 py-4 text-sm tracking-widest text-paper transition-colors hover:bg-laque-bright"
+          className="mt-12 rounded-lg inline-block bg-laque px-10 py-4 text-sm tracking-widest text-paper transition-colors hover:bg-laque-bright"
         >
           RÉSERVER PAR TÉLÉPHONE
         </a>
