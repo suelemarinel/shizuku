@@ -56,7 +56,7 @@ function Menu() {
           <p className="mt-10 text-center text-sm text-paper-muted">
             Menu unique — 180 € par personne
             <br />
-            accord saké en supplément
+            Saké en supplément
           </p>
         </div>
       </div>

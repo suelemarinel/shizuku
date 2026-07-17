@@ -13,9 +13,22 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Shizuku — Omakase",
+  metadataBase: new URL("https://shizuku.vercel.app"),
+  title: "Shizuku — Omakase | Restaurant japonais étoilé à Bruxelles",
   description:
-    "Restaurant omakase étoilé. Une expérience culinaire japonaise en douze services, au comptoir.",
+    "Restaurant omakase étoilé à Bruxelles. Douze services au comptoir, huit places, un menu unique chaque soir composé par le chef. Réservation par téléphone.",
+  openGraph: {
+    title: "Shizuku — Omakase",
+    description:
+      "Douze services au comptoir. Une soirée, un chef, le geste juste.",
+    locale: "fr_BE",
+    type: "website",
+    images: ["/hero.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({ children }) {

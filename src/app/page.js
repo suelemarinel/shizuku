@@ -7,7 +7,27 @@ import Footer from "@/components/Footer";
 import Gallery from "@/components/Gallery";
 
 export default function Home() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    name: "Shizuku",
+    servesCuisine: "Japonaise — Omakase",
+    priceRange: "€€€€",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "12 rue de l'Encre",
+      addressLocality: "Bruxelles",
+      postalCode: "1000",
+      addressCountry: "BE",
+    },
+    telephone: "+32473468044",
+  };
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
     <main>
       <Header />
       <Hero />
@@ -17,5 +37,6 @@ export default function Home() {
       <Reservation />
       <Footer />
     </main>
+    </>
   );
 }
